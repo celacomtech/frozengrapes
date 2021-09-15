@@ -30,7 +30,47 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <style>
+        h1.testimonials-header {
+            font-family: "Univers57-Condensed", sans-serif;
+            font-size: 18pt;
+            line-height: 1.1;
+            text-transform: uppercase;
+            font-weight: normal;
+            padding: 6px;
+        }
 
+        section#home-reviews {
+            margin: 50px 6px 70px 6px;
+            padding: 100px 0;
+            font-family: "Univers57-Condensed", sans-serif;
+            color: #5d564f;
+            background: #f7f7f7;
+        }
+
+            section#home-reviews h2 {
+                font-size: 1.75rem;
+                text-transform: uppercase;
+                margin-bottom: 50px;
+            }
+
+        .fa-quote-left {
+            padding-right: 10px;
+        }
+
+        .fa-quote-right {
+            padding-left: 10px;
+        }
+
+        section#home-reviews p {
+            font-size: 13pt;
+        }
+
+        .stars {
+            color: #BB8B41;
+        }
+
+    </style>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -45,13 +85,13 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active font-weight-bold" aria-current="page" href="index.html" style="color:#07827f">Home</a>
                     </li>
                     <!--<li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>-->
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link font-weight-bold" aria-current="page" href="#" style="color:#07827f disable">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold " data-toggle="modal" data-target="#subscribe"style="color:#07827f">Contact</a>
                     </li>-->
                     <!--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,10 +104,12 @@
                         </ul>
                     </li>-->
                 </ul>
+                <!--<button class="flex-c-m s1-txt2 size3 how-btn text-dark" data-toggle="modal" data-target="#subscribe">Request a quote!</button>-->
             </div>
         </div>
     </nav>
-    <header class="py-5 bg-light" style="background-image:url(images/AdobeStock_255367630.jpeg);background-size:cover;min-height:65%;   background-position: 30%"></header>
+    <header class="py-5 bg-light" style="background-image:url(images/AdobeStock_382274199_Preview.jpeg);background-size:cover;min-height:65%;   background-position: 30%"></header>
+    <!--<header class="py-5 bg-light" style="background-image:url(images/AdobeStock_255367630.jpeg);background-size:cover;min-height:65%;   background-position: 30%"></header>-->
     <!--<div class="container-fluid">
         <header style="background-image:url(images/AdobeStock_255367630_Preview.jpeg);background-size:cover"height="300">
             <img src="images/AdobeStock_255367630_Preview.jpeg" width="800"/>
@@ -77,49 +119,133 @@
     <div class="container">
         <h4 style="padding-top:15px">HOME<small class="text-uppercase"> / Frozen Grapes</small></h4>
         <hr />
-        <h1>A new way to enjoy wine with a fun, classy cool twist.</h1>
+        <h3 style="color:#c60b02" class="text-uppercase">A new way to enjoy wine with a fun, classy cool twist.</h3>
         <!--<h1>Frozen Grapes is a new way to enjoy wine with a fun, classy cool twist. Wine Slushies It’s a new fun, unique, social experience for ages 21 and over.</h1>-->
         <p>Frozen grapes is perfect for weddings, corporate events, baby showers and private parties! With custom signature cocktails and professional event bartenders, bring a special and unique touch to your event.</p>
         <div class="row" style="padding-top:15px;padding-bottom:15px">
             <div class="col-sm-3">
                 <div class="card">
-                    <img class="bd-placeholder-img card-img-top" src="images/AdobeStock_365544947_Preview.jpeg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
+                    <img class="bd-placeholder-img card-img-top" src="images/AdobeStock_160984717_Preview.jpeg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
 
                     <div class="card-body">
-                        <h5 class="card-title text-center text-uppercase text-dark">Wine</h5>
+                        <h1 class="card-title text-center text-uppercase ">Wine</h1>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Blueberry Pomegranate</li>
-                        <li class="list-group-item">Peach Bellini</li>
-                        <li class="list-group-item">White Sangria</li>
-                        <li class="list-group-item">Sangria</li>
+                    <ul class="list-group list-group-flush text-center ">
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Blueberry Pomegranate</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Peach Bellini</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">White Sangria</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Sangria</li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="card">
-                    <img class="bd-placeholder-img card-img-top" src="images/AdobeStock_300848074_Preview.jpeg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
+                    <img class="bd-placeholder-img card-img-top" src="images/AdobeStock_417180700_Preview.jpeg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
 
                     <div class="card-body">
-                        <h5 class="card-title text-center text-uppercase text-dark">Alcohol</h5>
+                        <h1 class="card-title text-center text-uppercase">Alcohol</h1>
                     </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Strawberry Daiquiri</li>
-                        <li class="list-group-item">Pina Colada</li>
-                        <li class="list-group-item">Hurricane</li>
-                        <li class="list-group-item">Gold Margarita</li>
-                        <li class="list-group-item">Peach Margarita</li>
+                    <ul class="list-group list-group-flush text-center ">
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Strawberry Daiquiri</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Pina Colada</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Hurricane</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Gold Margarita</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Peach Margarita</li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="card">
-                    <div class="fb-page" data-href="https://www.facebook.com/frozengrapesllc" data-tabs="timeline" data-width="500" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/frozengrapesllc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/frozengrapesllc">Frozen Grapes, LLC</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/frozengrapesllc" data-tabs="events,timeline,messages" data-width="500" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/frozengrapesllc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/frozengrapesllc">Frozen Grapes, LLC</a></blockquote></div>
 
                 </div>
+                <br />
+                <a class="twitter-timeline" href="https://twitter.com/FrozenGrapesLLC?ref_src=twsrc%5Etfw">Tweets by FrozenGrapesLLC</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!--<a href="https://twitter.com/intent/tweet?screen_name=FrozenGrapesllc&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-show-count="false">Tweet to @FrozenGrapesllc</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
             </div>
         </div>
     </div>
+    <section id="home-reviews"style="padding-top:15px;padding-bottom:15px;background-color:white">
+        <div class="col-sm-10 ml-auto mr-auto text-center">
+            <h2 class=""style="color:#c60b02">Read what some of our customers are saying</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            This was the best frozen drink I have every had!! Very sweet and the different flavors was great! Highly recommend Frozen Grapes for your needs!                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Mesha Coleman</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>The drinks are wonderful and tasty..... Best frozen drink I have ever had!!!!<i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Vernessa Verne Washington Culcleasure</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <!--<div class="carousel-item">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            The office signs look great.<i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Matthew at Enterprise Rent A Car</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                        </div>
+
+                    </div>-->
+                    <!--<div class="carousel-item">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            Your tech is outstanding.<i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Ted at Fall River Enterprises, Inc.</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>-->
+                    <!--<div class="carousel-item">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            very professional and courteous.<i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Valued Customer at FedEx Ground</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
     <!--<button class="flex-c-m s1-txt2 size3 how-btn"  data-toggle="modal" data-target="#subscribe">
         Follow us for update now!
     </button>-->
@@ -133,9 +259,17 @@
 
                 <div class="wsize1 m-lr-auto">
                     <h3 class="m1-txt1 txt-center p-b-36">
-                        <span class="bor1 p-b-6">Subscribe</span>
+                        <span class="bor1 p-b-6">Request a quote!</span>
                     </h3>
-
+                    <!--<video width="320" height="240" controls>
+        <source src="images/AdobeStock_411978905_Video_4K_Preview.mov" type="video/mov">
+        Your browser does not support the video tag.
+    </video>-->
+                    <video controls="controls" width="400" name="Video Name" autoplay="autoplay">
+                        <source src="images/AdobeStock_411978905_Video_4K_Preview.mov">
+                        Your Browser does not support the video element
+                    </video>
+                    <!--<iframe width="320" height="240" src="images/AdobeStock_411978905_Video_4K_Preview.mov"></iframe>-->
                     <p class="m1-txt2 txt-center p-b-40">
                         Follow us for update now!
                     </p>
@@ -167,8 +301,8 @@
         </div>
     </div>
     <!-- Footer-->
-    <footer class="py-5 bg-light">
-        <div class="m-0 text-center text-dark">
+    <footer class="py-5"style="background-color:#07827f;color:white">
+        <div class="m-0 text-center">
             <ul class="list-inline mb-0">
                 <li class="list-inline-item mr-3">
                     <a href="https://www.instagram.com/FrozenGrapes.LLC?utm_medium=copy_link" target="_blank">
@@ -186,7 +320,7 @@
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.twitter.com/FrozenGrapes" target="_blank">
+                    <a href="https://www.twitter.com/FrozenGrapesllc" target="_blank">
                         <i class="fab fa-twitter fa-2x fa-fw" style="color:#cb0709"></i>
                     </a>
                 </li>
@@ -194,7 +328,7 @@
         </div>
 
         <div class="container px-5">
-            <p class="m-0 text-center text-dark">
+            <p class="m-0 text-center">
                 Copyright &copy;
                 <script>
                     var CurrentYear = new Date().getFullYear()
