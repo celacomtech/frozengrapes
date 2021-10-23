@@ -30,7 +30,59 @@
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <style>
+        h1.testimonials-header {
+            font-family: "Univers57-Condensed", sans-serif;
+            font-size: 18pt;
+            line-height: 1.1;
+            text-transform: uppercase;
+            font-weight: normal;
+            padding: 6px;
+        }
 
+        section#home-reviews {
+            margin: 50px 6px 70px 6px;
+            padding: 100px 0;
+            font-family: "Univers57-Condensed", sans-serif;
+            color: #5d564f;
+            background: #f7f7f7;
+        }
+
+            section#home-reviews h2 {
+                font-size: 1.75rem;
+                text-transform: uppercase;
+                margin-bottom: 50px;
+            }
+
+        .fa-quote-left {
+            padding-right: 10px;
+        }
+
+        .fa-quote-right {
+            padding-left: 10px;
+        }
+
+        section#home-reviews p {
+            font-size: 13pt;
+        }
+
+        .stars {
+            color: #BB8B41;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url("img_parallax.jpg");
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    </style>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -38,20 +90,20 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom:5px solid #07827f">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-responsive" height="55" /></a>
+            <a class="navbar-brand" href="index.html"><img src="images/Logo.png" class="img-responsive" height="55" /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active font-weight-bold" aria-current="page" href="index.html" style="color:#07827f">Home</a>
                     </li>
                     <!--<li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link font-weight-bold" aria-current="page" href="#" style="color:#07827f disable">About</a>
                     </li>-->
                     <!--<li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link font-weight-bold " data-toggle="modal" data-target="#subscribe" style="color:#07827f">Contact</a>
                     </li>-->
                     <!--<li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,63 +116,156 @@
                         </ul>
                     </li>-->
                 </ul>
+                <!--<button class="flex-c-m s1-txt2 size3 how-btn text-dark" data-toggle="modal" data-target="#subscribe">Request a quote!</button>-->
             </div>
         </div>
     </nav>
-    <header class="py-5 bg-light" style="background-image:url(images/AdobeStock_255367630.jpeg);background-size:cover;min-height:65%;   background-position: 30%"></header>
+    <header class="py-5 bg-light" style="background-image:url(images/AdobeStock_382274199.jpeg);background-size:cover;min-height:65%;   background-position: 30%"></header>
+    <!--<header class="py-5 bg-light" style="background-image:url(images/AdobeStock_255367630.jpeg);background-size:cover;min-height:65%;   background-position: 30%"></header>-->
     <!--<div class="container-fluid">
         <header style="background-image:url(images/AdobeStock_255367630_Preview.jpeg);background-size:cover"height="300">
             <img src="images/AdobeStock_255367630_Preview.jpeg" width="800"/>
         </header>
 
     </div>-->
+    <!--<div class="parallax"></div>-->
+
+    <!--<div style="height:1000px;background-color:red;font-size:36px">
+        Scroll Up and Down this page to see the parallax scrolling effect.
+        This div is just here to enable scrolling.
+        Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>-->
+
     <div class="container">
-        <h4 style="padding-top:15px">HOME<small class="text-uppercase"> / Frozen Grapes</small></h4>
-        <hr />
-        <h1>A new way to enjoy wine with a fun, classy cool twist.</h1>
+        <!--<h4 style="padding-top:15px">HOME<small class="text-uppercase"> / Frozen Grapes</small></h4>
+        <hr />-->
+        <h3 style="color:#c60b02;padding-top:10px" class="text-uppercase">A new way to enjoy wine with a fun, classy cool twist.</h3><hr />
         <!--<h1>Frozen Grapes is a new way to enjoy wine with a fun, classy cool twist. Wine Slushies It’s a new fun, unique, social experience for ages 21 and over.</h1>-->
         <p>Frozen grapes is perfect for weddings, corporate events, baby showers and private parties! With custom signature cocktails and professional event bartenders, bring a special and unique touch to your event.</p>
-        <div class="row"style="padding-top:15px;padding-bottom:15px">
-            <div class="col-12 text-center ">
-                <div class="card-deck">
-                    <!-- 4 of these -->
-                    <div class="card">
-                        <img class="bd-placeholder-img card-img-top" src="images/AdobeStock_365544947_Preview.jpeg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
+        <div class="row" style="padding-top:15px;padding-bottom:15px">
+            <div class="col-sm-3">
+                <div class="card">
+                    <img class="bd-placeholder-img card-img-top" src="images/AdobeStock_160984717.jpg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
 
-                        <div class="card-body">
-                            <h5 class="card-title text-uppercase text-dark">Wine</h5>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Blueberry Pomegranate</li>
-                            <li class="list-group-item">Peach Bellini</li>
-                            <li class="list-group-item">White Sangria</li>
-                            <li class="list-group-item">Sangria</li>
-                        </ul>
+                    <div class="card-body">
+                        <h1 class="card-title text-center text-uppercase ">Wine</h1>
                     </div>
-                    <div class="card">
-                        <img class="bd-placeholder-img card-img-top" src="images/AdobeStock_300848074_Preview.jpeg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
+                    <ul class="list-group list-group-flush text-center ">
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Blueberry Pomegranate</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Peach Bellini</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">White Sangria</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Sangria</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <img class="bd-placeholder-img card-img-top" src="images/AdobeStock_417180700.jpeg" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" role="img">
 
-                        <div class="card-body">
-                            <h5 class="card-title text-center text-uppercase text-dark">Alcohol</h5>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Strawberry Daiquiri</li>
-                            <li class="list-group-item">Pina Colada</li>
-                            <li class="list-group-item">Hurricane</li>
-                            <li class="list-group-item">Gold Margarita</li>
-                            <li class="list-group-item">Peach Margarita</li>
-                        </ul>
+                    <div class="card-body">
+                        <h1 class="card-title text-center text-uppercase">Alcohol</h1>
                     </div>
-                    <div class="card">
-                        <div class="fb-page" data-href="https://www.facebook.com/frozengrapesllc" data-tabs="timeline" data-width="500" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/frozengrapesllc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/frozengrapesllc">Frozen Grapes, LLC</a></blockquote></div>
-
-                    </div>
-
+                    <ul class="list-group list-group-flush text-center ">
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Strawberry Daiquiri</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Pina Colada</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Hurricane</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Gold Margarita</li>
+                        <li class="list-group-item list-group-item-action" style="border-top:solid 4px #07827f">Peach Margarita</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="fb-page" data-href="https://www.facebook.com/frozengrapesllc" data-tabs="events,timeline,messages" data-width="500" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/frozengrapesllc" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/frozengrapesllc">Frozen Grapes, LLC</a></blockquote></div>
 
                 </div>
+                <br />
+                <a class="twitter-timeline" href="https://twitter.com/FrozenGrapesLLC?ref_src=twsrc%5Etfw">Tweets by FrozenGrapesLLC</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!--<a href="https://twitter.com/intent/tweet?screen_name=FrozenGrapesllc&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-show-count="false">Tweet to @FrozenGrapesllc</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
             </div>
         </div>
     </div>
+    <section id="home-reviews" style="padding-top:15px;padding-bottom:15px;background-color:white">
+        <div class="col-sm-10 ml-auto mr-auto text-center">
+            <h2 class="" style="color:#c60b02">Read what some of our customers are saying</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            This was the best frozen drink I have every had!! Very sweet and the different flavors was great! Highly recommend Frozen Grapes for your needs!                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Mesha Coleman</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>The drinks are wonderful and tasty..... Best frozen drink I have ever had!!!!<i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Vernessa Verne Washington Culcleasure</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <!--<div class="carousel-item">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            The office signs look great.<i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Matthew at Enterprise Rent A Car</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                        </div>
+
+                    </div>-->
+                    <!--<div class="carousel-item">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            Your tech is outstanding.<i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Ted at Fall River Enterprises, Inc.</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>-->
+                    <!--<div class="carousel-item">
+                        <p class="review-body">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            very professional and courteous.<i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </p>
+                        <p class="review-name">Valued Customer at FedEx Ground</p>
+                        <div class="stars">
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                            <i class="fa fa-star fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
     <!--<button class="flex-c-m s1-txt2 size3 how-btn"  data-toggle="modal" data-target="#subscribe">
         Follow us for update now!
     </button>-->
@@ -134,42 +279,84 @@
 
                 <div class="wsize1 m-lr-auto">
                     <h3 class="m1-txt1 txt-center p-b-36">
-                        <span class="bor1 p-b-6">Subscribe</span>
+                        <span class="bor1 p-b-6" style="border-bottom-color:#c60b02">Request a quote!</span>
                     </h3>
-
-                    <p class="m1-txt2 txt-center p-b-40">
+                    <!--<video width="320" height="240" controls>
+                        <source src="images/AdobeStock_411978905_Video_4K_Preview.mov" type="video/mov">
+                        Your browser does not support the video tag.
+                    </video>-->
+                    <video controls="controls" width="400" name="Video Name" autoplay="autoplay">
+                        <source src="images/AdobeStock_411978905_Video_4K_Preview.mov">
+                        Your Browser does not support the video element
+                    </video>
+                    <!--<iframe width="320" height="240" src="images/AdobeStock_411978905_Video_4K_Preview.mov"></iframe>-->
+                    <!--<p class="m1-txt2 txt-center p-b-40">
                         Follow us for update now!
-                    </p>
+                    </p>-->
 
                     <form class="contact100-form validate-form">
                         <div class="wrap-input100 m-b-10 validate-input" data-validate="Name is required">
-                            <input class="s1-txt4 placeholder0 input100" type="text" name="name" placeholder="Name">
+                            <input class="s1-txt4 placeholder0 input100" type="text" id="name" for="name" name="name" placeholder="Name">
                             <span class="focus-input100"></span>
                         </div>
 
+                        <div class="wrap-input100 m-b-20">
+                            <input class="s1-txt4 placeholder0 input100" type="tel" id="phone" form="phone" name="phone" placeholder="Number">
+                            <span class="focus-input100"></span>
+                        </div>
                         <div class="wrap-input100 m-b-20 validate-input" data-validate="Email is required: ex@abc.xyz">
-                            <input class="s1-txt4 placeholder0 input100" type="text" name="email" placeholder="Email">
+                            <input class="s1-txt4 placeholder0 input100" id="email" for="email" type="text" name="email" placeholder="Email">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="wrap-input100 m-b-20 date" data-provide="datepicker">
+                            <input class="s1-txt4 placeholder0 input100 " type="date" id="date" form="date" name="date" placeholder="Event Date" style="color:#c60b02">
+                            <!--<div class="input-group-addon">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>-->
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 m-b-20">
+                            <input class="s1-txt4 placeholder0 input100" type="number" id="guest" form="guest" name="guest" placeholder="Number of guest">
+                            <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 m-b-20">
+                            <input class="s1-txt4 placeholder0 input100" type="text" name="drinks" list="drinkOptions" placeholder="Drink type">
+                            <datalist id="drinkOptions">
+                                <option value="Wine">
+                                <option value="Alcohol">
+                                <option value="Both">
+                            </datalist>
+                        </div>
+                        <!--<div class="input-group date" data-provide="datepicker">
+                            <input type="text" class="form-control">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-th"></span>
+                            </div>
+                        </div>-->
+                        <div class="wrap-input100 m-b-20">
+                            <input class="s1-txt4 placeholder0 input100" type="text" id="message" form="message" name="message" placeholder="Message">
                             <span class="focus-input100"></span>
                         </div>
 
                         <div class="w-full">
-                            <button class="flex-c-m s1-txt2 size5 how-btn1 trans-04">
-                                Get Updates
+                            <button class="flex-c-m s1-txt2 size5 how-btn1 trans-04" onclick="sendEmail()">
+                                Submit
                             </button>
                         </div>
                     </form>
 
-                    <p class="s1-txt5 txt-center wsize2 m-lr-auto p-t-20">
+                    <!--<p class="s1-txt5 txt-center wsize2 m-lr-auto p-t-20">
                         And don’t worry, we hate spam too! You can unsubcribe at anytime.
-                    </p>
+                    </p>-->
                 </div>
             </div>
 
         </div>
     </div>
     <!-- Footer-->
-    <footer class="py-5 bg-light">
-        <div class="m-0 text-center text-dark">
+    <footer class="py-5" style="background-color:#07827f;color:white">
+        <div class="m-0 text-center">
             <ul class="list-inline mb-0">
                 <li class="list-inline-item mr-3">
                     <a href="https://www.instagram.com/FrozenGrapes.LLC?utm_medium=copy_link" target="_blank">
@@ -186,16 +373,16 @@
                         <i class="fab fa-facebook fa-2x fa-fw" style="color:#cb0709"></i>
                     </a>
                 </li>
-                <!--<li class="list-inline-item">
-                    <a href="https://www.twitter.com/FrozenGrapesLLC" target="_blank">
+                <li class="list-inline-item">
+                    <a href="https://www.twitter.com/FrozenGrapesllc" target="_blank">
                         <i class="fab fa-twitter fa-2x fa-fw" style="color:#cb0709"></i>
                     </a>
-                </li>-->
+                </li>
             </ul>
         </div>
 
         <div class="container px-5">
-            <p class="m-0 text-center text-dark">
+            <p class="m-0 text-center">
                 Copyright &copy;
                 <script>
                     var CurrentYear = new Date().getFullYear()
@@ -235,6 +422,41 @@
     <script src="vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
     <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+        //$('#myModal').on('shown.bs.modal', function () {
+        //    $('#myInput').trigger('focus')
+        //})
+        function sendEmail() {
+
+            var name = $("#name").val();
+            var phone = $("#phone").val();
+            //var website = $("#website").val();
+            var from = $("#email").val();
+            //var subject = $("#subject").val();
+            var date = $("#date").val();
+            var userMessage = $("#message").val();
+            var drinkTypes = $("#drinkOptions").val();
+
+            Email.send({
+                SecureToken: "b13b1d70-cad8-4839-9d3e-5e12d468e08c",
+                To: 'celacomtech@gmail.com',
+                From: from,
+                Subject: "Quote Request | Name: " + name + "Phone: " + phone,
+                Body: userMessage
+            })
+                //    .then(
+                //    message => alert(message)
+                //)
+                ;
+            $("#name").val(" ");
+            $("#email").val(" ");
+            //$("#subject").val(" ");
+            $("#message").val(" ");
+            $("#date").val(" ");
+            $("#drinkOptions").val(" ");
+        }
+    </script>
 
 </body>
 </html>
